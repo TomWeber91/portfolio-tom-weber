@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-colors: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -50,6 +50,16 @@ h2 {
 
 .competence, .project {
     margin-bottom: 20px;
+}
+
+.arrow-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black;
+    margin: 0 5px; /* Espace autour de la flèche */
 }
 
 footer {
