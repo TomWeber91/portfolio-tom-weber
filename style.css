@@ -1,107 +1,176 @@
 /* Style global */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     color: #333;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #ff5e5e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e54b4b;
+    transform: translateY(-2px);
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .competence, .project {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .arrow-right {
     display: inline-block;
     width: 0;
     height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid black;
-    margin: 0 5px; /* Espace autour de la flèche */
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 12px solid #333;
+    margin: 0 8px; /* Espace autour de la flèche */
+    transition: border-left-color 0.3s ease;
+}
+
+.arrow-right:hover {
+    border-left-color: #ff5e5e;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 50px;
 }
 
 footer a {
     color: #ff5e5e;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
+    color: #ff3a3a;
     text-decoration: underline;
 }
 
-
 #veille {
     background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 #veille h2 {
     text-align: center;
     color: #333;
+    font-size: 2.2em;
+    margin-bottom: 30px;
 }
 
 .veille-item {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veille-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
 .veille-item h3 {
     color: #333;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .veille-item p {
     margin: 0;
     color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #veille {
+        padding: 20px;
+    }
+
+    .veille-item h3 {
+        font-size: 1.5em;
+    }
 }
