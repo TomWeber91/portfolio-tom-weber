@@ -68,32 +68,18 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Conteneur principal de l'en-tête */
-.header {
-    padding: 20px;
-    background-color: #f4f4f4; /* Couleur d'arrière-plan (facultatif) */
-}
-
-/* Conteneur pour aligner le texte et le logo */
-.content {
+/* Conteneur titre et logo */
+.title-logo {
     display: flex;
-    align-items: center; /* Aligne verticalement le logo et le texte */
-    justify-content: space-between; /* Sépare le texte et le logo horizontalement */
+    align-items: center; /* Aligne le logo et le texte verticalement */
+    justify-content: space-between; /* Sépare le titre et le logo horizontalement */
+    margin-bottom: 10px; /* Ajoute un espace avec le contenu suivant */
 }
 
-/* Section texte */
-.text-section {
-    max-width: 70%; /* Ajustez pour laisser de l'espace au logo */
-}
-
-/* Section logo */
-.logo-section {
-    flex-shrink: 0; /* Empêche le logo de se réduire */
-}
-
+/* Style du logo */
 .logo {
-    width: 100px; /* Taille du logo */
-    height: auto; /* Conserve les proportions */
+    width: 100px; /* Ajustez la taille du logo */
+    height: auto; /* Conserve les proportions du logo */
 }
 
 .arrow-right {
