@@ -68,6 +68,17 @@ h2 {
     margin-bottom: 30px;
 }
 
+.logo-container {
+    text-align: right; /* Positionne le logo à droite */
+    padding: 10px 20px; /* Ajoute de l'espace autour */
+}
+
+/* Style du logo */
+.logo {
+    width: 150px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
 .arrow-right {
     display: inline-block;
     width: 0;
