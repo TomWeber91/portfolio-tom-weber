@@ -48,11 +48,23 @@ header p {
 
 section {
     padding: 30px;
-    margin: 20px auto;
+    margin: 40px auto; /* Augmentation des marges verticales */
     max-width: 900px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out; /* Animation ajoutée */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
@@ -76,11 +88,12 @@ h2 {
     border-bottom: 6px solid transparent;
     border-left: 12px solid #333;
     margin: 0 8px; /* Espace autour de la flèche */
-    transition: border-left-color 0.3s ease;
+    transition: border-left-color 0.3s ease, transform 0.2s ease; /* Ajout d'une transition sur la taille */
 }
 
 .arrow-right:hover {
     border-left-color: #ff5e5e;
+    transform: scale(1.2); /* Agrandissement de la flèche au survol */
 }
 
 footer {
@@ -107,10 +120,11 @@ footer a:hover {
 #veille {
     background-color: #f9f9f9;
     padding: 30px;
-    margin: 20px auto;
+    margin: 40px auto; /* Augmentation de la marge */
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out; /* Animation ajoutée */
 }
 
 #veille h2 {
@@ -121,7 +135,7 @@ footer a:hover {
 }
 
 .veille-item {
-    margin-bottom: 25px;
+    margin-bottom: 40px; /* Espacement plus important entre les items */
     padding: 15px;
     background-color: #fff;
     border-radius: 8px;
