@@ -68,15 +68,32 @@ h2 {
     margin-bottom: 30px;
 }
 
-.logo-container {
-    text-align: right; /* Positionne le logo à droite */
-    padding: 10px 20px; /* Ajoute de l'espace autour */
+/* Conteneur principal de l'en-tête */
+.header {
+    padding: 20px;
+    background-color: #f4f4f4; /* Couleur d'arrière-plan (facultatif) */
 }
 
-/* Style du logo */
+/* Conteneur pour aligner le texte et le logo */
+.content {
+    display: flex;
+    align-items: center; /* Aligne verticalement le logo et le texte */
+    justify-content: space-between; /* Sépare le texte et le logo horizontalement */
+}
+
+/* Section texte */
+.text-section {
+    max-width: 70%; /* Ajustez pour laisser de l'espace au logo */
+}
+
+/* Section logo */
+.logo-section {
+    flex-shrink: 0; /* Empêche le logo de se réduire */
+}
+
 .logo {
-    width: 150px; /* Ajustez la taille selon vos besoins */
-    height: auto;
+    width: 100px; /* Taille du logo */
+    height: auto; /* Conserve les proportions */
 }
 
 .arrow-right {
