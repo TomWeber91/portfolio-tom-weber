@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentations</title>
     <style>
-        /* Style global */
+    /* Style global */
+        .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.back-arrow:hover {
+    background: #ff5e5e;
+    color: white;
+    transform: translateY(-2px);
+}
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
@@ -130,6 +150,7 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="back-arrow">← Retour</a>
     <header>
         <h1>Documentaions</h1>
         <p>Pièces jointes en PDF des documenations pour l'E5 et l'E6</p>
@@ -138,13 +159,12 @@
         <section>
             <div class="glpi-item">
                 <h3>Documentaions E5</h3>
-                <p>J'ai configuré un environnement de développement local en installant des outils tels que Sublime Text, Git et un serveur local pour me former sur des projets web en autonomie.</p>
-                <p>J'ai également utilisé youtube et un agrégateur de flux rss pour approfondir mes connaissances techniques en cybersécurité.</p>
+                <a href="CV - Weber Tom.pdf" target="_blank" class="btn">Télécharger CV</a>
             </div>
 
             <div class="glpi-item">
                 <h3>Documentaions E6</h3>
-                <p>J'ai mis en place une veille technologique sur des sujets comme la cybersécurité en utilisant des outils comme Feedly pour les flux RSS, les informations à la télé et les articles. Cela m'a permis de suivre les évolutions dans le domaine de la cybersécurité.</p>
+                <p>En cours de réalisation...</p>
             </div>
         </section>
     </main>
